@@ -3,73 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .banner img {
-            width: 100%;
-            max-width: 600px;
-        }
-        .message h1 {
-            font-size: 3em;
-            margin: 20px 0;
-        }
-        .message p {
-            font-size: 1.5em;
-        }
-        table {
-            margin-top: 20px;
-            border-collapse: collapse;
-            width: 80%;
-            max-width: 600px;
-        }
-        table, th, td {
-            border: 1px solid white;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: grey;
-        }
-    </style>
+    <title>Minority Attack Tracker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="banner">
-        <img src="image/temple.jpg" alt="Banner Image">
+    <div class="topbar">
+        <div class="topbar-container">
+            <a href="index.html" class="topbar-link">Homepage</a>
+            <a href="report.html" class="topbar-link">Report Attack</a>
+        </div>
     </div>
-    <div class="message">
-        <h1>Under Construction</h1>
-        <p>We are working hard to bring you a great experience.</p>
+
+    <div id="homepage" class="container">
+        <h1>Minority Attack Tracker</h1>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
     </div>
-    <table>
-        <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
-        </tr>
-        <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-        </tr>
-        <tr>
-            <td>Data 4</td>
-            <td>Data 5</td>
-            <td>Data 6</td>
-        </tr>
-    </table>
+    
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <div id="popup-details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
