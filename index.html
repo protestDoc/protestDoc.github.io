@@ -9,20 +9,40 @@
             background-color: black;
             color: white;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-        }
-        .message {
             text-align: center;
+        }
+        .banner img {
+            width: 100%;
+            max-width: 600px;
         }
         .message h1 {
             font-size: 3em;
+            margin: 20px 0;
         }
         .message p {
             font-size: 1.5em;
+        }
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+        }
+        table, th, td {
+            border: 1px solid white;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: grey;
         }
     </style>
 </head>
@@ -32,6 +52,24 @@
     </div>
     <div class="message">
         <h1>Under Construction</h1>
+        <p>We are working hard to bring you a great experience.</p>
     </div>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+    </table>
 </body>
 </html>
